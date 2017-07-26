@@ -1,0 +1,27 @@
+<html>
+<head>
+   	<title>Mapstraction Simple OpenLayers Example</title>
+
+   	<script src="http://openlayers.org/api/OpenLayers.js"></script>
+
+   	<script src="https://rawgit.com/mapstraction/mxn/master/source/mxn.js?(openlayers)" type="text/javascript"></script>
+
+	<style type="text/css">
+	#map {
+		/* height: 200px; */
+	}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+	<script type="text/javascript">
+		var map = new mxn.Mapstraction('map', 'openlayers'); 
+		var latlon = new mxn.LatLonPoint(51.50733, -0.12769);
+
+		map.setCenterAndZoom(latlon, 10);
+	</script>
+        
+        <p>Don't forget the credits:<br>
+        &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</p>
+</body>
+</html>
